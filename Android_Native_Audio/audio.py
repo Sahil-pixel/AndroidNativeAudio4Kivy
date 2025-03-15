@@ -56,7 +56,7 @@ class Sound:
     def volume(self, value):
         self.setvolume(value)  # Use setvolume to validate & set
 
-class SoundLoaderL:
+class SoundLoader:
     @staticmethod
     def load(file_path, loop=False, volume=1.0):
         return Sound(file_path, loop, volume)
